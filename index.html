@@ -100,13 +100,20 @@ section{padding:clamp(36px,6vw,72px) 0}
 .skill .eyebrow{display:block;margin-bottom:8px}
 .skill p{font-size:14.5px;color:var(--muted)}
 
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.tile{background:var(--bg-2);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.tile img{width:100%;height:auto;display:block}
+.tile .cap{padding:14px 16px 16px}
+.tile .cap .eyebrow{display:block;margin-bottom:5px}
+.tile .cap h3{font-family:"Unbounded",sans-serif;font-weight:600;font-size:17px;line-height:1.25;letter-spacing:-.01em}
+.gallery.wide{grid-template-columns:1fr}
+
 footer{border-top:1px solid var(--line);padding:clamp(44px,7vw,86px) 0 clamp(54px,8vw,100px)}
 footer h2{font-family:"Unbounded",sans-serif;font-weight:800;font-size:clamp(26px,4.6vw,44px);line-height:1.06;letter-spacing:-.03em;margin-bottom:14px;max-width:14em}
 footer p{color:var(--muted);margin-bottom:26px;max-width:34em}
 footer .fine{margin-top:32px;font-size:12.5px;color:var(--muted)}
 </style>
 </head>
-
 <body>
 <div class="wrap">
 
@@ -126,7 +133,6 @@ footer .fine{margin-top:32px;font-size:12.5px;color:var(--muted)}
   </p>
 
   <nav class="btns">
-    <!-- ЗАМЕНИТЬ: подставить телеграм и почту -->
     <a class="btn solid" href="https://t.me/MrPlintus">Telegram</a>
     <a class="btn" href="mailto:kattrin.lada@gmail.com">kattrin.lada@gmail.com</a>
     <a class="btn" href="#works">Работы ↓</a>
@@ -134,128 +140,89 @@ footer .fine{margin-top:32px;font-size:12.5px;color:var(--muted)}
 </header>
 
 
-<!-- ============ ПЛАКАТ И ПЕЧАТНАЯ ГРАФИКА ============ -->
+<!-- ============ СОЦСЕТИ ============ -->
 <section id="works">
   <div class="sec-head">
     <span class="eyebrow">01</span>
+    <h2>Соцсети</h2>
+  </div>
+  <div class="gallery wide">
+    <div class="tile">
+      <img src="img/carousel.jpg" alt="Карусель для соцсетей, шесть слайдов">
+      <div class="cap">
+        <span class="eyebrow">Карусель, 10 слайдов, 1080&times;1080</span>
+        <h3>Лид-магнит для образовательной компании</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ ПЛАКАТ И ПЕЧАТНАЯ ГРАФИКА ============ -->
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">02</span>
     <h2>Плакат и печатная графика</h2>
   </div>
-  <p class="sec-note">
-    Работа с иерархией, сеткой и подготовкой файлов к печати.
-  </p>
-
-  <article class="work">
-    <div class="shot"><img src="img/poster-earth.jpg" alt="Плакат по цитате Эйнштейна"></div>
-    <div class="meta">
-      <span class="eyebrow">Плакат, А2</span>
-      <h3>Земля в слове и образе</h3>
-      <p><strong>Задача.</strong> Плакат по цитате Эйнштейна о человеке как части целого — так, чтобы текст и изображение говорили об одном.</p>
-      <p><strong>Что делала.</strong> Задачей было передать ощущение бесконечности космоса, для чего был использовано наложение цветов друг на друге с использованием тонирования точками.</p>
-      <p><strong>Результат.</strong> Смысл цитаты прочитывается без чтения текста — по одной композиции.</p>
-      <div class="chips"><span class="chip">Photoshop</span><span class="chip">типографика</span><span class="chip">растр</span></div>
+  <div class="gallery">
+    <div class="tile">
+      <img src="img/poster-earth.jpg" alt="Плакат по цитате Эйнштейна">
+      <div class="cap"><span class="eyebrow">Плакат</span><h3>Земля в слове и образе</h3></div>
     </div>
-  </article>
-
-  <article class="work flip">
-    <div class="shot"><img src="img/kerchief.jpg" alt="Макет платка: симметричный орнамент в оранжево-чёрной гамме"></div>
-    <div class="meta">
-      <span class="eyebrow">Текстильный принт</span>
-      <h3>Платок</h3>
-      <p><strong>Задача.</strong> Орнамент для платка: симметричный, работающий и в развёрнутом виде, и когда платок сложен или завязан.</p>
-      <p><strong>Что делала.</strong> Построила композицию на четырёх осях симметрии, чтобы рисунок читался с любой стороны. Три цвета — оранжевый, чёрный, белый — держат контраст при любой печати. Кайма собрана из повторяющегося модуля и стыкуется по углам.</p>
-      <p><strong>Результат.</strong> Готовый к печати макет: вылеты, стыковка раппорта, ограниченная палитра под тканевую печать.</p>
-      <div class="chips"><span class="chip">Illustrator</span><span class="chip">орнамент</span><span class="chip">допечатная подготовка</span></div>
+    <div class="tile">
+      <img src="img/kerchief.jpg" alt="Макет платка с орнаментом">
+      <div class="cap"><span class="eyebrow">Текстильный принт</span><h3>Платок</h3></div>
     </div>
-  </article>
-
-  <article class="work">
-    <div class="shot"><img src="img/poster-cinema.jpg" alt="Афиша кинонедели: оранжево-жёлтая гамма, треугольники и повторяющийся паттерн"></div>
-    <div class="meta">
-      <span class="eyebrow">Афиша</span>
-      <h3>Кинонеделя</h3>
-      <p><strong>Задача.</strong> Афиша фестивальной программы, где число и названия фильмов было неизвестно.</p>
-      <p><strong>Что делала.</strong> Построила сетку и сделала фигурный набросок для фоновой иллюстрации, который в последствии стал прожектором.</p>
-      <p><strong>Результат.</strong> Шаблон, в который программа подставляется без переверстки.</p>
-      <div class="chips"><span class="chip">Illustrator</span><span class="chip">сетка</span><span class="chip">плакат</span></div>
+    <div class="tile">
+      <img src="img/poster-cinema.jpg" alt="Афиша кинонедели">
+      <div class="cap"><span class="eyebrow">Афиша</span><h3>Кинонеделя</h3></div>
     </div>
-  </article>
+  </div>
 </section>
 
 
 <!-- ============ ИЛЛЮСТРАЦИЯ ============ -->
 <section>
   <div class="sec-head">
-    <span class="eyebrow">02</span>
+    <span class="eyebrow">03</span>
     <h2>Иллюстрация</h2>
   </div>
-  <p class="sec-note">Свет, цветовая масса, композиция кадра.</p>
-
-  <article class="work">
-    <div class="shot"><img src="img/fox.jpg" alt="Векторная иллюстрация: лис с музыкальным инструментом в орнаментальной рамке"></div>
-    <div class="meta">
-      <span class="eyebrow">Векторная иллюстрация</span>
-      <h3>Плакат "Сотканные временем"</h3>
-      <p><strong>Задача.</strong> Плоская иллюстрация по мотивам семейных традиций малых народов России.</p>
-      <p><strong>Что делала.</strong> Три цвета плюс чёрный фон. Фигура собрана крупными заливками, орнамент рамки построен на повторяющемся модуле, фактура внутри силуэта даёт глубину без светотени.</p>
-      <p><strong>Результат.</strong> Плакат для выстовкипо заданной теме.</p>
-      <div class="chips"><span class="chip">Illustrator</span><span class="chip">вектор</span><span class="chip">плакат</span></div>
+  <div class="gallery">
+    <div class="tile">
+      <img src="img/fox.jpg" alt="Векторная иллюстрация с лисом">
+      <div class="cap"><span class="eyebrow">Векторная графика</span><h3>Лис с лирой</h3></div>
     </div>
-  </article>
-
-  <article class="work flip">
-    <div class="shot"><img src="img/heart.jpg" alt="Цифровая иллюстрация: фигура со светящимся источником в центре композиции"></div>
-    <div class="meta">
-      <span class="eyebrow">Цифровая иллюстрация</span>
-      <h3>Источник света внутри кадра</h3>
-      <p><strong>Задача.</strong> Построить сцену, где свет — не подсветка, а смысловой центр.</p>
-      <p><strong>Что делала.</strong> Источник помещён внутрь композиции, тёмное окружение работает как рамка. Ограниченная палитра: тёплый жёлтый против глубокого коричневого, красное пятно — единственный акцент.</p>
-      <p><strong>Результат.</strong> Взгляд удерживается в центре без контурных подсказок, только светом и цветовой массой.</p>
-      <div class="chips"><span class="chip">Photoshop</span><span class="chip">свет</span><span class="chip">ограниченная палитра</span></div>
+    <div class="tile">
+      <img src="img/heart.jpg" alt="Цифровая иллюстрация со светящимся источником">
+      <div class="cap"><span class="eyebrow">Цифровая иллюстрация</span><h3>Источник света внутри кадра</h3></div>
     </div>
-  </article>
+  </div>
 </section>
 
 
 <!-- ============ ДИЗАЙН ПЕРСОНАЖЕЙ ============ -->
 <section>
   <div class="sec-head">
-    <span class="eyebrow">03</span>
+    <span class="eyebrow">04</span>
     <h2>Дизайн персонажей</h2>
   </div>
-  <p class="sec-note">
-    Листы с поиском формы: силуэт, варианты костюма, проработка деталей отдельным рядом.
-  </p>
-
-  <article class="work">
-    <div class="shot"><img src="img/bird.jpg" alt="Лист дизайна персонажа: птицечеловек, поиск силуэта и костюма"></div>
-    <div class="meta">
-      <span class="eyebrow">Лист персонажа</span>
-      <h3>Птицечеловек</h3>
-      <p><strong>Задача.</strong> Собрать персонажа, который читается силуэтом и остаётся птицей, не превращаясь в человека в костюме.</p>
-      <p><strong>Что делала.</strong> Тумбнейлы поз, два варианта общего облика в цвете, отдельная проработка головы и лап. Рукав решён как имитация крыла — форма работает и в статике, и в движении.</p>
-      <p><strong>Результат.</strong> Персонаж узнаётся по одному силуэту; детали вынесены отдельно, чтобы работу можно было передать другому исполнителю.</p>
-      <div class="chips"><span class="chip">силуэты</span><span class="chip">поиск формы</span><span class="chip">костюм</span></div>
+  <div class="gallery">
+    <div class="tile">
+      <img src="img/bird.jpg" alt="Лист дизайна персонажа: птицечеловек">
+      <div class="cap"><span class="eyebrow">Лист персонажа</span><h3>Птицечеловек</h3></div>
     </div>
-  </article>
-
-  <article class="work flip">
-    <div class="shot"><img src="img/moth.jpg" alt="Лист дизайна персонажа: мотылёк, вид спереди и проработка ног"></div>
-    <div class="meta">
-      <span class="eyebrow">Лист персонажа</span>
-      <h3>Мотылёк</h3>
-      <p><strong>Задача.</strong> Насекомое с человеческой пластикой — так, чтобы пропорции не выглядели костюмом на человеке.</p>
-      <p><strong>Что делала.</strong> Контрастная схема: тёмная масса тела против светлых крыльев. Строение ног отработано выносками, крылья держат общий овал композиции.</p>
-      <p><strong>Результат.</strong> Двухтоновая схема, которая переносится в любую палитру без потери силуэта.</p>
-      <div class="chips"><span class="chip">анатомия</span><span class="chip">двухтоновая схема</span><span class="chip">скетч</span></div>
+    <div class="tile">
+      <img src="img/moth.jpg" alt="Лист дизайна персонажа: мотылёк">
+      <div class="cap"><span class="eyebrow">Лист персонажа</span><h3>Мотылёк</h3></div>
     </div>
-  </article>
+  </div>
 </section>
 
 
 <!-- ============ ИНСТРУМЕНТЫ ============ -->
 <section>
   <div class="sec-head">
-    <span class="eyebrow">04</span>
+    <span class="eyebrow">05</span>
     <h2>Инструменты</h2>
   </div>
   <div class="skills">
@@ -286,11 +253,10 @@ footer .fine{margin-top:32px;font-size:12.5px;color:var(--muted)}
   <h2>Открыта к тестовому заданию и стажировке.</h2>
   <p>Санкт-Петербург, офис или удалённо. Отвечаю в течение дня.</p>
   <nav class="btns">
-    <!-- ЗАМЕНИТЬ: подставить телеграм и почту -->
     <a class="btn solid" href="https://t.me/MrPlintus">Написать в Telegram</a>
     <a class="btn" href="mailto:kattrin.lada@gmail.com">kattrin.lada@gmail.com</a>
   </nav>
-  <p class="fine">Обновлено: август 2026</p>
+  <p class="fine">Обновлено: сентябрь 2026</p>
 </footer>
 
 </div>
